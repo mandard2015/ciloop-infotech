@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata = {
   title: "Services | Ciloop Infotech",
-  description: "Explore our IT, software, AI, cloud, and DevOps services.",
+  description: "Enterprise-grade services for digital transformation, process automation, managed operations, and cloud-native systems.",
 };
 
 export default function ServicesPage() {
@@ -15,9 +15,9 @@ export default function ServicesPage() {
       <main className="mx-auto w-full max-w-6xl px-6 py-14 md:px-8">
         <section className="rounded-[2rem] bg-white p-10 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">Services</p>
-          <h1 className="mt-4 text-4xl font-semibold text-slate-950">Solutions designed for modern businesses.</h1>
+          <h1 className="mt-4 text-4xl font-semibold text-slate-950">Services that improve operations and reduce costs.</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Our services cover software development, cloud infrastructure, AI automation, data analytics, UX design, and DevOps.
+            We deliver services across outsourcing, managed IT, cloud, software engineering, automation, and analytics — all focused on measurable operational outcomes.
           </p>
         </section>
 

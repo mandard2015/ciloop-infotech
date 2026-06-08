@@ -21,7 +21,7 @@ export function HeroSection() {
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Link href="/contact">
-              <Button variant="primary">Book Free Consultation</Button>
+              <Button variant="primary">Book a Discovery Call</Button>
             </Link>
             <Link href="/portfolio">
               <Button variant="ghost">View Our Work</Button>

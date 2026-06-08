@@ -2,18 +2,18 @@ import type { SiteConfig } from "@/types/content";
 
 export const siteConfig: SiteConfig = {
   companyName: "Ciloop Infotech Pvt Ltd",
-  title: "Ciloop Infotech | Operational Excellence Through Technology & Outsourcing",
+  title: "Ciloop Infotech | Operational Efficiency. Outsourcing. Digital Transformation.",
   description:
-    "Driving operational excellence through technology, outsourcing, and digital transformation services for enterprise organizations.",
-  defaultTagline: "Driving Operational Excellence Through Technology & Outsourcing",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
-  logo: "/logo.svg",
+    "Helping businesses streamline operations, reduce costs, and accelerate growth through technology-enabled outsourcing and digital transformation solutions.",
+  defaultTagline: "Operational Efficiency. Outsourcing. Digital Transformation.",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ciloopinfotech.com",
+  logo: "/file.svg",
   nav: [
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
     { title: "Services", href: "/services" },
     { title: "Industries", href: "/industries" },
-    { title: "Case Studies", href: "/case-studies" },
+    { title: "Case Studies", href: "/portfolio" },
     { title: "Careers", href: "/careers" },
     { title: "Contact", href: "/contact" },
   ],

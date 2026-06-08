@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata = {
   title: "Contact | Ciloop Infotech",
-  description: "Get in touch with Ciloop Infotech to start your next project.",
+  description: "Get in touch with Ciloop Infotech to start a discovery call, request a proposal, or learn about outsourcing options.",
 };
 
 export default function ContactPage() {
@@ -15,9 +15,9 @@ export default function ContactPage() {
       <main className="mx-auto w-full max-w-5xl px-6 py-14 md:px-8">
         <section className="rounded-[2rem] bg-white p-10 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">Contact</p>
-          <h1 className="mt-4 text-4xl font-semibold text-slate-950">Let’s build your next digital product together.</h1>
+          <h1 className="mt-4 text-4xl font-semibold text-slate-950">Start with a discovery call</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Reach out to discuss your project, ask about services, or schedule a consultation.
+            Tell us about your operational challenges and goals — we’ll assess opportunities for automation, cost reduction, and digital transformation.
           </p>
         </section>
 
@@ -37,6 +37,10 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-sm font-semibold text-slate-950">Business hours</h3>
                 <p className="mt-2">{siteConfig.contact.hours}</p>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-slate-950">Quick contact</h3>
+                <p className="mt-2">Prefer messaging? Reach us on WhatsApp at {siteConfig.environment.integrations.whatsappNumber ?? "(via website)"} or use the form.</p>
               </div>
             </div>
           </aside>

@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/header";
 
 export const metadata = {
   title: "About | Ciloop Infotech",
-  description: "Learn about our mission, leadership, culture, and why clients trust us.",
+  description: "Ciloop Infotech is a strategic technology and outsourcing partner focused on operational efficiency, automation, and measurable business outcomes.",
 };
 
 export default function AboutPage() {
@@ -13,10 +13,9 @@ export default function AboutPage() {
       <main className="mx-auto w-full max-w-5xl px-6 py-14 md:px-8">
         <section className="rounded-[2rem] bg-white p-10 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-600">About us</p>
-          <h1 className="mt-4 text-4xl font-semibold text-slate-950">Building technology partnerships that scale.</h1>
+          <h1 className="mt-4 text-4xl font-semibold text-slate-950">A strategic partner for operational transformation.</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            We help businesses innovate with modern software, AI, cloud, and automation. Our focus is on transparent communication,
-            security-first engineering, and delivering measurable business outcomes.
+            We partner with enterprises to reduce operational costs, automate business processes, and accelerate digital transformation through pragmatic engineering and delivery.
           </p>
         </section>
 
@@ -24,13 +23,13 @@ export default function AboutPage() {
           <article className="rounded-[2rem] bg-white p-8 shadow-sm">
             <h2 className="text-2xl font-semibold text-slate-950">Mission</h2>
             <p className="mt-4 text-slate-600">
-              Deliver technology solutions that empower organizations to grow, adapt, and lead in their market.
+              Enable organizations to operate more efficiently and scale through technology, automation, and dependable delivery.
             </p>
           </article>
           <article className="rounded-[2rem] bg-white p-8 shadow-sm">
             <h2 className="text-2xl font-semibold text-slate-950">Vision</h2>
             <p className="mt-4 text-slate-600">
-              Be a trusted partner for digital transformation with sustainable, future-ready software.
+              To be the preferred technology and outsourcing partner that consistently delivers measurable operational improvements.
             </p>
           </article>
         </section>

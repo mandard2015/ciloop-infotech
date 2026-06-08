@@ -1,5 +1,4 @@
 import { siteConfig } from "@/lib/siteConfig";
-import type { FaqItem } from "@/types/content";
 
 export const organizationSchema = {
   "@context": "https://schema.org",
@@ -18,7 +17,7 @@ export const organizationSchema = {
   ],
 };
 
-export function buildFaqSchema(faqs: FaqItem[]) {
+export function buildFaqSchema(faqs: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",

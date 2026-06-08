@@ -3,9 +3,21 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/footer";
 import { SiteHeader } from "@/components/header";
 import { siteConfig } from "@/lib/siteConfig";
+import { createPageMetadata } from "@/lib/seo/metadata";
 
 interface ServicePageProps {
   params: { service: string };
+}
+
+export function generateMetadata({ params }: ServicePageProps) {
+  const service = siteConfig.serviceDetails.find((item) => item.id === params.service);
+  if (!service) return { title: "Service" };
+
+  return createPageMetadata({
+    title: service.title,
+    description: service.description,
+    path: `/services/${service.id}`,
+  });
 }
 
 export const generateStaticParams = () => {

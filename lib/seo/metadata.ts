@@ -6,6 +6,7 @@ export const defaultMetadata: Metadata = {
   title: siteConfig.title,
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
+  keywords: siteConfig.keywords as string[] | undefined,
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,

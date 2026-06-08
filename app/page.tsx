@@ -12,6 +12,7 @@ import { SiteFooter } from "@/components/footer";
 import { SiteHeader } from "@/components/header";
 import { siteConfig } from "@/lib/siteConfig";
 import { createPageMetadata } from "@/lib/seo/metadata";
+import { organizationSchema, buildFaqSchema } from "@/lib/seo/schema";
 
 export const metadata = createPageMetadata({
   title: "Home",
@@ -23,6 +24,12 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50">
       <SiteHeader />
+      <script type="application/ld+json">
+        {JSON.stringify(organizationSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(buildFaqSchema(siteConfig.faqs))}
+      </script>
       <main className="mx-auto w-full max-w-6xl px-6 pb-16 pt-8 md:px-8">
         <HeroSection />
         <div className="mt-12 space-y-12">
