@@ -12,7 +12,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-xl font-semibold text-slate-950">
-          Ciloop Infotech
+          {siteConfig.name}
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {siteConfig.nav.map((item) => (

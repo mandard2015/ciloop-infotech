@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/lib/siteConfig";
 import type { MetadataInput } from "@/types/seo";
 
 export const defaultMetadata: Metadata = {

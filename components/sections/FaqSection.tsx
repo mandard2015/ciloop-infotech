@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { siteConfig } from "@/lib/siteConfig";
 import { SectionHeading } from "@/components/ui/section-heading";

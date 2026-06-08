@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { AnalyticsProviders } from "@/components/AnalyticsProviders";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/lib/siteConfig";
 import { defaultMetadata } from "@/lib/seo/metadata";
 import "./globals.css";
 

@@ -10,12 +10,14 @@ import { FaqSection } from "@/components/sections/FaqSection";
 import { FinalCtaSection } from "@/components/sections/FinalCtaSection";
 import { SiteFooter } from "@/components/footer";
 import { SiteHeader } from "@/components/header";
+import { siteConfig } from "@/lib/siteConfig";
+import { createPageMetadata } from "@/lib/seo/metadata";
 
-export const metadata = {
-  title: "Home | Ciloop Infotech",
-  description:
-    "Custom software development, AI solutions, cloud infrastructure, and digital transformation services for modern businesses.",
-};
+export const metadata = createPageMetadata({
+  title: "Home",
+  description: siteConfig.description,
+  path: "/",
+});
 
 export default function HomePage() {
   return (

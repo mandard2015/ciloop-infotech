@@ -46,10 +46,13 @@ export type FaqItem = {
 
 export const siteConfig = {
   name: "Ciloop Infotech",
+  companyName: "Ciloop Infotech Pvt Ltd",
   title: "Ciloop Infotech | IT Services & Software Development",
   description:
     "Custom software development, AI solutions, cloud infrastructure, and digital transformation services for modern businesses.",
-  url: "https://example.com",
+  defaultTagline: "Driving Operational Excellence Through Technology & Outsourcing",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
+  logo: "/logo.svg",
   nav: [
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
@@ -266,4 +269,17 @@ export const siteConfig = {
       answer: "We offer maintenance, monitoring, and support packages tailored to each client.",
     },
   ] as FaqItem[],
+  serviceCategories: ["Technology Services", "Business Solutions", "Transformation Services"],
+  environment: {
+    analytics: {
+      googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID,
+      clarityProjectId: process.env.NEXT_PUBLIC_MICROSOFT_CLARITY_PROJECT_ID,
+    },
+    integrations: {
+      whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
+      tawkToPropertyId: process.env.NEXT_PUBLIC_TAWK_TO_PROPERTY_ID,
+      newsletterProvider: process.env.NEXT_PUBLIC_NEWSLETTER_PROVIDER,
+      emailServiceProvider: process.env.NEXT_PUBLIC_EMAIL_SERVICE_PROVIDER,
+    },
+  },
 };

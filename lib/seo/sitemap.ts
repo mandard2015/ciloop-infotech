@@ -1,4 +1,4 @@
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/lib/siteConfig";
 
 export function generateSitemapXml(routes: string[] = ["/", "/about", "/services", "/contact"]): string {
   const urls = routes.map((route) => `  <url>\n    <loc>${siteConfig.url}${route}</loc>\n  </url>`).join("\n");

@@ -1,4 +1,4 @@
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/lib/siteConfig";
 
 export function generateRobotsTxt(): string {
   return [
